@@ -1,8 +1,9 @@
 <main class="center" id="main">
+<pb-breadcrumbs [selectedItem]="selectedItem"></pb-breadcrumbs>
   <!-- This is a Semantic HTML Change -->
   <section class="page-area">
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Stay on trackzzzzzz')">
         <h3>Stay on trackzzzzzz</h3>
         <p>Do you know where you are spending your money? If you really stop to track it down,
           you would get surprised! Proper budget management depends on real data... and this
@@ -11,7 +12,7 @@
       </pb-article>
 
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Alerts')">
           <!-- This is an SEO Change -->
           <h3>Alerts</h3>
           <p>
@@ -19,7 +20,7 @@
           </p>
       </pb-article>
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Results')">
           <!-- This is an SEO Change -->
           <h3>Results</h3>
           <p>
@@ -29,7 +30,7 @@
           </p>
       </pb-article>
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Free')">
           <!-- This is an SEO Change -->
           <h3>Free</h3>
           <p>
@@ -37,7 +38,7 @@
           </p>
       </pb-article>
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Stay on track')">
           <!-- This is an SEO Change -->
           <h3>Stay on track</h3>
           <p>
@@ -47,7 +48,7 @@
           </p>
       </pb-article>
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Alert')">
           <!-- This is an SEO Change -->
           <h3>Alerts</h3>
           <p>
@@ -55,7 +56,7 @@
           </p>
       </pb-article>
 
-      <pb-article>
+      <pb-article (click)="onItemClick('Results')" >
           <!-- This is an SEO Change -->
           <h3>Results</h3>
           <p>
@@ -65,7 +66,7 @@
           </p>
       </pb-article>
 
-      <article>
+      <article (click)="onItemClick('Chart')">
           <!-- This is an SEO Change -->
           <h3>Chart</h3>
           <p>
@@ -73,10 +74,10 @@
               <canvas id="myChart" width="400" height="400" aria-label="Pie chart displaying budget"></canvas>
           </p>
       </article>
-      <!-- <article>
+      <article (click)="onItemClick('D3JS Chart')">
           <h3>D3JS Chart</h3>
           <svg id="donut" width="650" height="500"></svg>
-      </article> -->
+      </article>
   </section>
 
 </main>
